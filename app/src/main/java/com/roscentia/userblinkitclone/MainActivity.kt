@@ -1,4 +1,4 @@
-package com.roscentia.userblinkitclone
+package com.example.userblinkitclone
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

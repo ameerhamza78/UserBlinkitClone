@@ -6,12 +6,10 @@ plugins {
 
 android {
     namespace = "com.example.userblinkitclone"
-    compileSdk {
-        version = release(34)
-    }
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.roscentia.userblinkitclone"
+        applicationId = "com.example.userblinkitclone"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
@@ -57,8 +55,13 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.9.6")
     implementation("androidx.navigation:navigation-ui-ktx:2.9.6")
     //lifecycle
-    implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
     implementation("androidx.lifecycle:lifecycle-common-java8:2.10.0")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.10.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.10.0")
+    //firbase BoM
     implementation(platform("com.google.firebase:firebase-bom:34.7.0"))
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-firestore")
+    implementation("com.google.firebase:firebase-storage")
+    implementation("com.google.firebase:firebase-messaging")
+    
 }
